@@ -1,0 +1,224 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post a Job</title>
+    <link rel="stylesheet" href="{% static 'css/style3.css' %}">
+</head>
+<style>
+#logo{
+    padding-left: 40px;
+    margin-top: 30px;
+}
+#ptag{
+    color:white;
+    font-size: 15px;
+    padding-left: 75px;
+    margin-top: -20px;
+}
+.post{
+background-color: rgb(48, 48, 247);
+}
+#heading{
+    color:white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 350px;
+
+}
+#input{
+    width: 400px;
+    height: 30px;
+}
+#sup{
+    color:rgb(68, 68, 240)
+}
+#p2{
+    padding-left: 15px;
+    font-size: 15px;
+
+}
+#button{
+    color:white;
+    background-color: rgb(53, 53, 218);
+    width:400px;
+    height:40px;
+
+}
+#para{
+padding-left: 40px;
+font-size: 15px;
+}
+.form{
+    background-color: white;
+    padding-left: 20px;
+    padding-right:130px;
+    width:300px;
+    margin: auto;
+    margin-top: 30px;
+}
+.container{
+    margin-top: 50px;
+    display:flex;
+    background-color: antiquewhite;
+}
+.p{
+    font-size: 25px;
+    color:rgb(81, 81, 236);
+    padding-left: 80px;
+    
+}
+.image{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.section{
+     display: flex; 
+}
+#ptag1{
+    font-size: 20px;
+    color:black;
+    margin-top:30px;
+
+    margin-right: 60px;
+    
+    
+}
+#head{
+padding-left:100px;
+}
+#image2{
+    float:left;
+}
+#ptag2{
+    font-size: 20px;
+    padding-left: 80px;
+    float: left;
+    padding-top: 10px;
+    
+    
+}
+#image3{
+    float:right;
+    margin-top:110px;
+}
+#ptag4{
+font-size: 20px;
+padding-top: 40px;
+}
+#tag{
+    font-size: 20px;
+
+}
+.container2{
+    display:flex;
+}
+ #tag1{
+    padding-right: 80px;
+font-size: 20px;
+}
+#tag2{
+    
+    padding-right: 80px;
+    font-size: 20px;
+}
+#tag3{
+    
+    font-size: 20px;
+} 
+#header{
+    padding-left:350px;
+}
+
+</style>
+<body>
+    <div class="post">
+    <nav>
+        <img id="logo" src="{% static 'images/img.png' %}"width="30px;">
+        <p id="ptag">JOBS</p>
+    </nav>
+    <h1 id="heading">Join LinkedIn to start your job post</h1>
+    <div class="form">
+    <form action="">
+        <label for="" id="label">First name<sup id="sup">*</sup></label><br>
+                <input type="text" id="input"><br><br>
+                <label for="" id="label">Last name<sup id="sup">*</sup></label><br>
+                <input type="text" id="input"><br><br>
+                <label for="" id="label">Email<sup id="sup">*</sup></label><br>
+                <input type="text" id="input"><br><br>
+                <label for="" id="label">Password (6 or more characters)<sup id="sup">*</sup></label><br>
+                <input type="password"id="input"><br>
+                <p id="p2">By clicking Join now, you agree to the LinkedIn <a href="">User</a> <span id="span"><a href="">Agreement</a>,<a href="">Privacy Policy</a>, and <a href="">Cookie Policy</a>.</span>
+                </p><br>
+            <button type="submit" id="button"><b>Join Now</b></button><br><br>
+            <p id="para"> Already on LinkedIn? <a href="">Sign in</a></p>
+        
+    </form>
+</div>
+    </div>
+    <div class="container">
+        <div class="p">
+        <p id="ptag2">“The candidate pool on LinkedIn is simply higher caliber. Professionals <br>choose to represent themselves on LinkedIn versus other networks.”
+        </p>
+        </div>
+        <div class="image">
+        <img  id="image"src="{% static 'images/girl.jpg' %}" width="100px" alt="girl">
+    </div>
+    <div>
+        <p>Julie Leslie<br>
+
+            The Howard <br>Group</p>
+    </div>
+</div>
+<div >
+    <h1 id="head">A hire is made every 10 seconds on LinkedIn. Here is why.</h1>
+</div>
+<div class="section">
+    <div>
+        <img  id="image2"src="{% static 'images/pict.jpg' %}" width="1000px">
+    </div>
+    <div>
+    <p id="ptag1"><b>Uniquely qualified</b><br>
+        LinkedIn members are active on our network<br> and engaged in their careers. 9 out of <br>10 of them are open to work, but most aren’t visiting<br> job boards. So the only place to reach them is<br> right here.</p>
+    </div>
+</div>
+
+<div class="section">
+    
+    <div>
+        <p id="ptag2"><b>Targeted matches</b><br>
+            Our network gives us the deepest, most up-to-<br>date, and insightful data set on professionals.<br> We use that data to match your role to<br> qualified professionals through targeted<br> promotions of your job across LinkedIn and <br>candidate recommendations that get smarter <br>over time.</p>
+    
+    </div>
+    <div>
+        <img  id="image3"src="{% static 'images/pict2.jpg' %}" width="1000px">
+    </div>
+</div>
+
+ <div class="section">
+    <div>
+        <img  id="image4"src="{% static 'images/pict3.jpg' %}" width="1000px">
+    </div>
+    <div>
+    <p id="ptag4"> <b>Only pay for results</b><br>
+        Pay only when a candidate views your job post.<br> Tell us how much you want to spend and we’ll give you an estimate of how many applicants <br>you can expect to receive.</p>
+    </div>
+</div> 
+
+<h1 id="header">LinkedIn Jobs come with…</h1>
+<div class="container2">
+    <div>
+    <p id="tag1">Targeted job promotion: targeted <br>promotion to surface your job to<br> candidates with the right skills, <br>both in emails and across LinkedIn</p>
+</div>
+<div>
+    <p id="tag2">Recommended Matches: candidate<br> recommendations that get smarter over <br>time, providing personalized results.
+     </p>
+</div>
+<div>
+    <p id="tag3">Candidate Management: a simple<br> dashboard that tracks everyone from<br> application to hire, all in one place.</p>
+</div>
+</div>
+</body>
+</html>

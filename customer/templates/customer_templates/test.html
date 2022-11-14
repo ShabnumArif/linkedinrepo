@@ -1,0 +1,477 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>linkedin</title>
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    .button1 {
+        float: right;
+        border-radius: 30px;
+        margin-right: 20px;
+        padding: 10px;
+        font-size: large;
+        color: blue;
+        border-color: blue;
+        margin-top: 20px;
+    }
+
+    .button2 {
+        float: right;
+        border-radius: 30px;
+        margin-right: 15px;
+        padding: 10px;
+        font-size: large;
+        border-width: 1px;
+        margin-top: 20px;
+
+    }
+
+    
+    .div2 {
+        display: flex;
+        font-size: 60px;
+        color: rgb(56, 23, 23);
+
+
+    }
+
+    .icons {
+        float: left;
+        padding: 10px;
+        margin-right: 300px;
+        font-size: larger;
+        padding-top: 50px;
+
+    }
+
+    .icons {
+        margin-right: 400px;
+        margin-bottom: 200px;
+
+        padding: 20px 20px;
+    }
+
+    .icon2 {
+        margin-right: 40px;
+        margin-left: 40px;
+
+
+    }
+
+    .image1 {
+        padding-left: 400px;
+        padding-top: 50px;
+    }
+
+    .textbox {
+        height: 50px;
+        width: 400px;
+        margin-right: 500px;
+
+    }
+
+    #btn {
+        width: 130px;
+        height: 40px;
+        background-color: blue;
+        color: white;
+        border-radius: 30px;
+        border: none;
+    }
+
+    /* .div3 {
+        border: 1px;
+        background-color: grey; */
+
+
+    /* } */
+
+    .input {
+        padding-block-start: 200px;
+    }
+
+    .container {
+        /* background-color: gray;
+        border-width: 200px;
+         */
+
+    }
+
+    #ptag {
+        font-size: 40px;
+
+
+    }
+
+    .contenttopics {
+        float: right;
+
+    }
+
+    #btn1 {
+        border-radius: 30px;
+        height: 50px;
+        width: 100px;
+        
+
+    }
+
+    .container {
+        float: center;
+        margin-left: 500px;
+        margin-bottom: 600px;
+        margin-top: -120px;
+    }
+
+    .alltopics {
+        border-color: blue;
+        color: blue;
+    }
+
+    #btn3 {
+
+        border-radius: 30px;
+        height: 50px;
+        width: 150px;
+        margin-left: 600px;
+    }
+
+    #btn4 {
+        border-radius: 30px;
+        height: 50px;
+        width: 100px;
+        border: none;
+        margin-left: 600px;
+    }
+
+    .container2 {
+        float: center;
+        margin-left: 500px;
+        margin-bottom: 600p;
+    }
+
+    #div1 {
+        background-color: rgb(240, 206, 212);
+    }
+
+    #paratag {
+        color: rgb(110, 39, 39);
+        font-size: 50px;
+        padding-left:50px; ;
+    }
+
+    #button {
+        border-color: blue;
+        color: blue;
+        float: right;
+        border-radius: 30px;
+        height: 30px;
+        margin-bottom: 300px;
+        margin-top: -180px;
+        margin-right: 700px;
+    }
+
+    #ptags {
+        font-size: 30px;
+        color: rgb(110, 39, 39);
+        margin-left: 150px;
+        
+    }
+
+    .roundimage img {
+
+        margin-left: 700px;
+        margin-top: -320px;
+    }
+
+    .div2 {
+        background-color: rgb(240, 227, 229);
+
+    }
+
+    .pic1 {
+        float: left;
+        margin-left: 230px;
+        font-size: 40px;
+        color: rgb(29, 2, 29);
+        margin-top: 30px;
+    }
+
+    .pic2 {
+        float: right;
+        margin-right: 230px;
+        font-size: 40px;
+        color: rgb(29, 2, 29);
+        margin-top: 30px;
+    }
+
+    #input1 {
+        border-radius: 30px;
+        width: 200px;
+        height: 50px;
+        padding-left: 15px;
+        border-color: rgb(29, 2, 29);
+        color: rgb(29, 2, 29);
+        font-size: 20px;
+
+    }
+
+    #input2 {
+        width: 300px;
+        height: 50px;
+        font-size: 20px;
+    }
+
+    #btn_btn {
+        border-radius: 40px;
+        background-color: blue;
+        color: white;
+        font-size: 15px;
+        height: 50px;
+        width: 120px;
+        margin-left: 40px;
+    }
+
+    
+    /* ul {
+        list-style-type: none;
+    } */
+
+    .find {
+        margin-top: -500px;
+    }
+
+    #btn2 {
+        margin-top: -120px;
+    }
+    #btn1{
+        width:200px;
+        margin-top:5px;
+    }
+
+    .join {
+        margin-top: 600px;
+        font-size: 60px;
+        color: rgb(29, 2, 29);
+        margin-left: 60px;
+    }
+
+    .lists {
+        display: flex;
+        flex-direction: auto;
+        background-color: bisque;
+        margin-top: 20px;
+
+    }
+
+    .list1 {
+        margin-left: 200px;
+    }
+
+    .list2 {
+        margin-left: 60px;
+    }
+
+    .list3 {
+        margin-left: 60px;
+    }
+
+    .list4 {
+        margin-left: 60px;
+    }
+
+    .logo2 {
+        margin-left: 200px;
+    }
+
+    .picture3 {
+        margin-top: 30px;
+    }
+
+</style>
+
+<body>
+    <nav class="navbar">
+        <img src="{% static 'images\logo.jpg' %}" width="100px" id="logo">
+        <a href="sign_in"><button type="submit" class="button1">Sign in</button></a>
+       <a href="join_now" ><button type="submit" class="button2">Join Now</button></a>
+    </nav>
+
+    <div class="div2">
+        <p id="para1">Welcome to your<br> professional <br>community</p>
+       
+        <img class="image1" src="https://static-exp1.licdn.com/aero-v1/sc/h/dxf91zhqd2z6b0bwg85ktm5s4" width="560px">
+    </div>
+
+    <div class="icons">
+        <a href="" class="icon1">Jobs</a>
+        <a href="" class="icon2">People</a>
+        <a href="" class="icon3">Learning</a><br><br>
+
+        
+        <input type="text" class="textbox" placeholder="Search job titles or Companies"><br><br>
+        <input type="text" class="textbox" placeholder="Location"><br><br>
+        <button id="btn" type="submit"><b>Search Job</b></button>
+        
+    </div>
+
+    <section class="explore">
+        <p id="ptag"> Explore topics you<br> are interested in</p>
+        <div class="container">
+            
+            <p id="btn2">CONTENT TOPICS</p>
+            <button id="btn1" class="alltopics">See All Topics</button>
+
+            <button id="btn1">Workplace</button>
+
+            <button id="btn1">Job Search</button>
+
+            <button id="btn1">Carreers</button>
+
+            <button id="btn1">Iterviewing</button>
+
+            <button id="btn1">Salary and Compensation</button>
+
+            <button id="btn1">Internships</button>
+            <button id="btn1">Employee Benefits</button>
+
+
+
+            
+
+        </div>
+    </section>
+
+    <section>
+
+        <div class="find">
+            <p id="ptag">Find the right job or<br> internship for you</p>
+            <div class="container2">
+                <p id="btn2">Suggested Searches</p>
+                <button id="btn1" class="rightjob">Engineering</button>
+
+                <button id="btn1">Business Development</button>
+
+                <button id="btn1">Finance</button><br><br>
+
+                <button id="btn1">Administrative Assistant</button>
+
+                <button id="btn1">Retail Associate</button><br><br>
+
+                <button id="btn1">Customer Service</button>
+
+                <button id="btn1">Operations</button>
+                <button id="btn1">Information Technology</button><br><br>
+                <button id="btn1">Marketing</button>
+                <button id="btn1">Human Resources</button><br><br>
+                <button id="btn1">show more</button>
+
+            </div>
+
+        </div>
+    </section>
+
+    <div class="container-fluid" id="div1">
+        <p id="paratag">Post your job for<br> millions of people to <br>see</p>
+       <a href="post_job"><button id="button"><b>Post a job</b></button></a> 
+    </div>
+
+    <div>
+
+
+        <p id="ptags">Let the right people know<br> you’re open to work</p>
+        <p id="ptags"> With the Open To Work feature, you can<br> privately tell recruiters or publicly share<br>
+            with the
+            LinkedIn community that you are<br> looking for new job opportunities.</p>
+
+        <div class="roundimage"><img src="{% static 'images/roundimage.jpg' %}" width="350px"></div>
+    </div>
+
+    <div class="pic1">
+        <img src="{% static 'images/picture1.svg' %}" width="300px">
+        <p>Connect with people<br> who can help</p>
+        <input id="input1" type="text" placeholder="Find people you know">
+    </div>
+
+    <div class="pic2">
+        <img src="{% static 'images/picture2.svg' %}" width="300px">
+        <p>Learn the skills you <br>need to succeed</p>
+        <input id="input2" type="text" placeholder="Choose a topic to learn about">
+    </div>
+
+
+    <div class="join">
+        <p id="join">Join your colleagues, classmates, and friends on <br>LinkedIn.</p>
+       <a href="get_started"><button id="btn_btn">Get Started</button></a> 
+    </div>
+    <div class="picture3">
+        <img src="{% static 'images/picture3.jpg' %}" width="100%">
+    </div>
+
+    <div class="lists">
+        <div class="logo2">
+            <img src="{% static 'images\logo.jpg' %}" width="100px" id="logo">
+        </div>
+
+        <div class="list1">
+
+            <p>General
+            <p>
+            <p><a href="">Sign Up</a></p>
+            <p><a href="">Help Center</a></p>
+            <p><a href="">About</a></p>
+            <p><a href="">Press</a></p>
+            <p><a href="">Blog</a></p>
+            <p><a href="">Careers</a></p>
+            <p><a href="">Developers</a></p>
+
+        </div>
+
+        <div class="list2">
+
+            <p>Browse Linkedin</li>
+            <p><a href="">Learning</a></p>
+            <p><a href="">Jobs</a></p>
+            <p><a href="">Salary</a></p>
+            <p><a href="">Mobile</a></p>
+            <p><a href="">Services</a></p>
+            <p><a href="">Products</a></p>
+
+        </div>
+
+        <div class="list3">
+            <p>Business Solutions</p>
+            <p><a href="">Talent</a></p>
+            <p><a href="">Marketing</a></p>
+            <p><a href="">Sales</a></p>
+            <p><a href="">Learning</a></p>
+
+        </div>
+
+        <div class="list4">
+            <p>Directories</p>
+            <p><a href="">Members</a></p>
+            <p><a href="">Jobs</a></p>
+            <p><a href="">Companies</a></p>
+            <p><a href="">Featured</a></p>
+            <p><a href="">Learning</a></p>
+            <p><a href="">Posts</a></p>
+            <p><a href="">Articles</a></p>
+            <p><a href="">Schools</a></p>
+            <p><a href="">News</a></p>
+
+        </div>
+
+    </div>
+
+    </section>
+</body>
+
+</html>

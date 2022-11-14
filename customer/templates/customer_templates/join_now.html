@@ -1,0 +1,134 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style1.css' %}">
+</head>
+<style>
+    .join {
+        background-color: rgb(252, 248, 248);
+
+    }
+
+    .logo {
+        padding-left: 200px;
+    }
+
+    .form{
+        background-color: white;
+        width:400px;
+        padding-top:20px;
+        margin:auto;
+        padding-left: 30px;
+        padding-right: 30px;
+        
+        
+    }
+    #label{
+        color: rgb(14, 14, 41);
+    }
+    #input{
+        width:400px;
+        height: 30px;
+    }
+    #p2{
+        padding-left: 20px;
+    }
+    #span{
+        padding-left: 30px;
+    }
+    #button{
+        width:400px;
+        border-radius: 30px;
+        height:40px;
+        background-color: blue;
+        color:white;
+        font-size: 15px;
+    }
+    
+        
+    
+    #continue{
+        border-radius: 30px;
+        width: 400px;
+        height:40px;
+    
+    }
+    #para{
+        padding-left:30px;
+    }
+</style>
+
+<body>
+    <div class="join">
+        <nav>
+            <img class="logo" src="{% static 'images\logo.jpg' %}" width="100px" id="logo">
+        </nav>
+        <h1 id="p1">
+            <center>Make the most of your professional life</center>
+        </h1>
+        <div class="form" >
+            <form action="">
+                <label for="" id="label">E-mail or phone number</label><br><br>
+                <input type="text" id="input"><br><br>
+                <label for="" id="label">Password (6 or more characters)</label><br><br>
+                <input type="password"id="input"><br><br>
+                <p id="p2">By clicking Agree & Join, you agree to the LinkedIn <a href="">User</a><br> <span id="span"><a href="">Agreement</a>,<a href="">Privacy Policy</a>, and <a href="">Cookie Policy</a>.</span>
+                    </p><br><br>
+                <button type="submit" id="button">Agree & Join</button><br>
+            </form>
+            <p>---------------or--------------</p>
+            <div>
+                <form action="">
+                    <!-- <span id="gimage"><a href=""><img src="{% static 'images/google.jpg'%}" width="30px"> </a></span> -->
+                    <button type="submit" id="continue" >Continue with google</button>
+                </form>
+                <p id="para"> Already on LinkedIn? <a href="">Sign in</a></p>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </form>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+</body>
+
+</html>

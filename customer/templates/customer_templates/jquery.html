@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 200px;
+            width: 200px;
+            background-color: blueviolet;
+            display:none;
+            position: absolute;
+            padding: 20px;
+            border:3px black solid;
+
+        }
+        .div1{
+            background-color: grey;
+
+        }
+    </style>
+</head>
+<body>
+    <p id="p1">Welcome to jquery</p>
+    <input type ="text" value = "jquery">
+    <script>
+        $(document).ready(function(){
+            var a =$('#p1').html('hello jquery')
+            console.log(a)
+            var b=$('input').val()
+            console.log(b)
+        })
+    </script>
+<button id='b1'>submit</button>
+<div class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id ipsum esse veritatis, consectetur itaque autem maiores, sit sapiente cum officia corporis explicabo animi, tempora ipsam molestiae nulla necessitatibus facere nobis.</div>
+<div id="div2">Lorem ipsum dolor, <span id="span1">sit amet consectetur</span> adipisicing elit. <span id="span2">Consequuntur adipisci </span>praesentium corporis facilis reprehenderit tempore, saepe ut dolorum vitae nostrum eaque id ea repudiandae incidunt temporibus nisi dolores ex molestias.</div>
+</div>
+<ul>
+    <li>A</li>
+    <li>B</li>
+    <li>C</li>
+    <li>D</li>
+</ul>
+<script>
+    $(document).ready++(function(){
+        $('#b1').clickfunction(){
+            $('div').hide()
+            $('div').show()
+            $('div').toggle(5000)
+            $('div').fadeIn()
+            $('div').fadeOut(5000)
+            $('div').fadeTo(1000,0.5)
+            $('div').fadeToggle()
+            $('div').slideDown()
+            $('div').slideUp()
+
+        }
+    })
+</script>
+
+
+
+</body>
+</html>
