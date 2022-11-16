@@ -8,4 +8,5 @@ urlpatterns = [
     path('sign_in',views.sign_in),
     path('post_job',views.post_job),
     path('get_started',views.get_started),
+    path('video',views.video),
 ]

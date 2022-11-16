@@ -22,3 +22,7 @@ def post_job(request):
 
 def get_started(request):
       return render(request,'customer_templates/get_started.html')
+
+
+def video(request):
+       return render(request,'customer_templates/video.html')
